@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FormBack test form</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body>
+<main>
+  <p class="eyebrow">FORMBACK · LOCAL TEST</p><h1>Multi-step form</h1>
+  <p>Fill the fields, use Next, reload, then restore with the FormBack toolbar button.</p>
+  <p id="step-label"></p><form id="test-form" data-formback-flow="formback-local-test">
+    <section class="step" data-formback-step="1"><h2>Step 1 · About you</h2><label>Name<input name="name" autocomplete="name" required></label><label>Date of birth<input type="date" name="birthDate" required></label><label><input type="checkbox" name="citizen"> Citizen</label></section>
+    <section class="step" data-formback-step="2" hidden><h2>Step 2 · Contact</h2><label>Email<input type="email" name="email" required></label><label>Phone<input type="tel" name="phone" required></label><label>Contact method<select name="contactMethod" required><option value="">Choose</option><option>Email</option><option>Phone</option></select></label></section>
+    <section class="step" data-formback-step="3" hidden><h2>Step 3 · Address</h2><label>Street<input name="street" required></label><label>City<input name="city" required></label><label>Province<select name="province" required><option value="">Choose</option><option>Koshi</option><option>Madhesh</option><option>Bagmati</option><option>Gandaki</option><option>Lumbini</option><option>Karnali</option><option>Sudurpashchim</option></select></label></section>
+    <section class="step" data-formback-step="4" hidden><h2>Review</h2><p>Nothing is submitted. Reload to test recovery.</p></section>
+    <div class="buttons"><button id="back" type="button" class="quiet">Back</button><button id="next" type="button">Next →</button><button id="reload" type="button" class="quiet">Reload page</button></div>
+  </form>
+  <p class="note">Tip: FormBack checkpoints before each Next. On the last step, open the extension popup and click Restore draft.</p>
+</main></body></html>

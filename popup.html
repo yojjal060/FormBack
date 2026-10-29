@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FormBack</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <main class="panel">
+    <header><div class="mark">↶</div><div><h1>FormBack</h1><p>Your draft stays yours.</p></div><span class="local"><i></i> ON DEVICE</span></header>
+    <section class="status"><div class="status-icon">✓</div><div><strong id="status-title">Ready when you are</strong><p id="status-copy">Enable FormBack on this site to start local autosave.</p></div></section>
+    <button id="enable-site" class="primary enable">Enable on this site <span>↗</span></button>
+    <div id="actions" class="actions" hidden><button id="save" class="primary">Save this step <span>↗</span></button><button id="restore" class="secondary">Restore draft</button></div>
+    <button id="delete" class="delete">Delete saved draft</button>
+    <div class="rule"></div>
+    <div class="privacy"><span>◈</span><p><strong>Private by design</strong><br>Passwords, OTPs, CAPTCHA, payment fields and files are skipped. Nothing is uploaded.</p></div>
+    <footer><span id="site">Current website</span><span class="dot">·</span><span id="draft-state">No saved draft</span></footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
